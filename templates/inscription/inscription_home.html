@@ -1,0 +1,79 @@
+
+{% extends 'menu.html' %}
+
+{% block contenu %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+  <h6> Liste des Candidats(es) inscrits(es) pour recrutement</h6>
+<form enctype="multipart/form-data"  method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<!-- <button type="submit" class="save btn btn−default">Enregistrer</button> -->
+</form>
+<br />
+
+
+<div class="table-responsive border ='1' width="600" style="border-collapse:collapse;">
+    <table class="table align-middle">
+      <thead bgcolor="#f5af19">
+        <tr>
+            <td><b>Photo</b></td>
+            <td><b>Nom</b></td>
+            <td><b>Prenom</b></td>
+            <td><b>Date/Naissance</b></td>
+            <td><b>Lieu</b></td>
+            <td><b>Diplôme</b></td>
+            <td><b>Fonction</b></td>
+            <!-- <td bgcolor="#dddddd"><b>Anciénété(s)</b></td> -->
+            <!-- <td bgcolor="#dddddd"><b>Emploi précé dent</b></td> -->
+            <td><b>Téléphone</b></td>
+            <td><b>Email</b></td>
+            <td><b>CV</b></td>
+            <td><b>date</b></td>
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for inscription in inscription %}
+        <tr>
+            <td>
+                <img src = "/images/{{inscription.photo_profil }}" width = "85" height = "90">
+            </td>
+    
+            <td>{{ inscription.nom }}</td>
+            <td>{{ inscription.prenom }}</td>
+            <td>{{ inscription.date_naissance }}</td>
+            <td>{{ inscription.lieu_naissance }}</td>
+            <td>{{ inscription.dernier_diplome }}</td>
+            <!-- <td>{{ inscription.diplome }}</td> -->
+            <td>{{ inscription.fonction }}</td>
+            <!-- <td>{{ inscription.nombre_experience }}</td> -->
+            <!-- <td>{{ inscription.emploi_precedent}}</td> -->
+            <td>{{ inscription.telephone}}</td>
+            <td>{{ inscription.email }}</td>
+            <td><a class="btn btn-success" href="/images/{{inscription.cv }}" role="button">Voir CV</a></td>
+            <td>{{ inscription.date }}</td>
+
+          </tr>
+        <!-- <tr class="align-bottom">
+
+        </tr>
+        <tr>
+            <td class="align-top"></td>
+        </tr> -->
+      </tbody>
+      {% endfor %}
+    </table>
+</div>
+</body>
+</html>
+ 
+
+{% endblock %}

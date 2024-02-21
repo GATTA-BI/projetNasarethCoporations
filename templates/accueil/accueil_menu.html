@@ -1,0 +1,238 @@
+{% extends 'menu.html' %}
+
+{% block contenu %}
+
+{% load static %}
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/img1.jpg'%}" alt="" width="100%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="40%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%"></rect> 
+        <div class="carousel-caption">
+          <a href="inscription/inscripts"><div id="Bouton"> <button type="button" class="btn btn-outline-danger btn-lg">Veuillez Cliquer Ici</button></div></a> 
+          <h1> Offre de Recrutement des Professeurs et Educateurs, </h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/img3.jpg'%}" alt="" width="100%" height="40%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="30%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%"></rect>    
+        <div class="carousel-caption">
+            <a href="formulaire/forme"><div id="Bouton"> <button type="button" class="btn btn-outline-danger btn-lg">Veuillez Cliquer Ici</button></div></a> 
+          <h1 id="Texte"> Offre de Formation des Professeurs et Educateurs,</h1>
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <img src="{% static 'images/img4.jpg'%}" alt="" width="100%" height="40%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="30%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%"></rect> 
+        <div class="carousel-caption">
+          <h1> Les émargements sont enregistrés et partagés</h1>
+        </div>
+      </div> -->
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+  <!-- <center>
+  <div class="col-md-12 mx-auto">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/l03.png'%}" alt="" width="65%" height="30%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="30%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%" fill="#777">
+          <div class="container">
+            <div class="carousel-caption text-start">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/l01.png'%}" alt="" width="65%" height="30%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="30%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%" fill="#777">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/l02.png'%}" alt="" width="65%" height="30%" class="d-inline-block align-text-top" bd-placeholder-img width="100%" height="30%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%" fill="#777">
+          <div class="container">
+            <div class="carousel-caption text-end">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  </div>
+  </div>
+  </center> -->
+</div>
+</div>
+
+
+
+<section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-12 col-xl-12 mx-auto mb-4 text-center">
+        <!-- Content -->
+        <!-- <h5 class="text-uppercase text-start fw-bold mb-4"> -->
+          <h3>
+            Nazareth CORPORATIONS <br>
+          </h3>
+          <dd class="fas fa-gem me-3 text-success">
+            <em>CABINET D'ETUDE - DE FORMATION PEDAGOGIQUE <br> 
+            DE FORMATION DIPLÔMANTE ET CERTIFICATIVE</em><br>
+            <u><strong><em>Agrée par FDFP</em></strong> </u> 
+            <!-- </h5> -->
+          </dd>
+
+        <div class="card center carde0">
+          <div class="card-body">
+            <img src="{% static 'images/gat.png'%}" alt="" width="20%" class="d-inline-block align-text-center" bd-placeholder-img width="20%" height="40%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="50%" height="50%"></rect> 
+            <h7 class="card-title fw-bold">Directeur Général</h7>
+            <p class="text-center text-black">         
+              <strong> <em>Nous dispensons l'Enseignement Général au niveau du Primaire et Secondaire. <br>
+              Cette plateforme nous facilite la gestion de la liste de présence des membres du personnel Baléhata <br>
+               (membres de l'Administration, Professeurs et Instituteurs).
+              </em> </strong>
+            </p>
+          </div>
+        </div>
+      
+      
+      </div>
+      <!-- Grid column -->
+</section>
+<div>
+<div class="container">
+<div class="card mb-3">
+  <div class="row g-0">
+
+    <div class="col-md-8">
+      <div class="card-body">
+        <br>
+        <h5 class="card-title">Formation</h5>
+        <p class="card-text text-black text-start">La formation des canditats pour les concours comme l'ENA et l'ENS(Options Professeurs et Educateurs)
+        sont disponibles. Nous formons aussi des Professionnels et Universitaires accompagnés avec des Certifications.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <br> 
+      <img src="{% static 'images/form1.jpeg'%}" class="img-fluid rounded-start" alt="...">
+      <p class="card-text text-center"><small class="text-muted">publié le 21 janvier 2024</small></p>
+
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <br>
+        <h5 class="card-title">Formation</h5>
+        <p class="card-text text-black text-start">La formation des canditats pour les concours comme l'ENA et l'ENS(Options Professeurs et Educateurs)
+        sont disponibles. Nous formons aussi des Professionnels et Universitaires accompagnés avec des Certifications.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <br>
+
+      <img src="{% static 'images/form1.jpeg'%}" class="img-fluid rounded-start" alt="...">
+      <p class="card-text text-center"><small class="text-muted">publié le 21 janvier 2024</small></p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <br>
+        <h5 class="card-title">Formation</h5>
+        <p class="card-text text-black text-start">La formation des canditats pour les concours comme l'ENA et l'ENS(Options Professeurs et Educateurs)
+        sont disponibles. Nous formons aussi des Professionnels et Universitaires accompagnés avec des Certifications.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <br> 
+      <img src="{% static 'images/form1.jpeg'%}" class="img-fluid rounded-start" alt="...">
+      <p class="card-text text-center"><small class="text-muted">publié le 21 janvier 2024</small></p>
+    </div>
+
+  </div>
+</div>
+
+
+     
+      <div class="card-group ">
+        <div class="card">
+            <img src="{% static 'images/logo.jpeg'%}" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-success text-warning">Go somewhere</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="{% static 'images/logo.jpeg'%}" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h2 class="card-title">Formation</h2>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-success text-warning">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card">
+          <img src="{% static 'images/logo.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body ">
+            <h2 class="card-title">Card title</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-success text-warning">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body" style="background-color: #f8a73e">
+            <h4 class="card-title text-white">Galérie d'images</h4>
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/formation.jpg'%}" class="d-block w-100" alt="..." width="30px" height="30px">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/form1.jpeg'%}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/img2.jpg'%}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+
+</div> 
+</div>
+
+
+{% endblock %}

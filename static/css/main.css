@@ -1,0 +1,190 @@
+#logo{
+
+}
+
+body {
+  font:
+    1em/150% Helvetica,
+    Arial,
+    sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 150em;
+}
+
+.navbar {
+background-color:#ffffff;
+
+}
+.foo {
+    background-color:#019a47;
+    /* #8ab70e; */
+    font-size: 18px;
+    box-shadow: 1px 5px 5px rgb(214, 213, 213);
+
+}
+
+
+
+
+
+
+
+
+#Bouton {
+text-align: end;
+padding: 5px;
+animation-name: clin;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+@keyframes clin {
+to {color: #e2f440;}
+
+}
+
+.Butt{
+                                    	
+    animation:nom_anim_bouton1 1s infinite alternate
+        
+        }
+    
+    @keyframes nom_anim_bouton1{
+        
+    from{
+        
+        box-shadow:0 0 10px #ffffff
+        
+        }
+        
+    to{
+        
+        box-shadow:0 0 10px hwb(0 0% 100%) 
+        
+        }
+        
+        }
+h5{
+    font-weight: thin;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 10px solid #019a47;
+    margin-block-start: 5px;
+    margin-left: 150px;
+    text-align: start;
+
+}
+
+h6{
+    border-left: 20px solid #019a47;
+    border-bottom: 7px solid #019a47;
+    font-size: 20px;
+    color:#019a47;
+    margin: 20px 10px;
+
+}
+
+#cadreTexte{
+    text-align: center;
+}
+
+.carde0{
+    box-shadow: 1px 10px 10px rgb(214, 213, 213);
+}
+
+#pp{
+display: flex;
+justify-content: right;
+}
+
+#pp{
+display: flex;
+justify-content: start;
+}
+
+
+
+.pp1{
+
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hh{
+display: block;
+color:#019a47;
+text-decoration: none;
+text-align: start;
+font-size: 14px;
+}
+
+
+.card-body{
+    display: block;
+    color:#019a47;
+    text-decoration: none;
+    text-align: center;
+        
+    }
+    
+
+#logo{
+ 
+    text-align: start;
+    line-height: 0px;
+        
+    }
+
+
+#center {
+   padding-left: 40%;
+   font-size: 15px;
+   color: green;
+    }
+
+
+
+.nav a:focus {
+    font-size: 20px;
+    background-color: #f5af19;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+h1 {
+ font-size: 45px;
+ color: #faec55;
+ text-align: center;
+ 
+ text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+#Texte {
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;    
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    
+   }
+
+.carousel-item img {
+ width : 100%;
+ height : 400px;
+ }
+.nav-link a {
+ text-decoration: none;
+ color: #b01313;
+}
+
+.nav a:visited {
+ color:#ffffff;
+}
+
+.nav a:hover {
+ color:  #faec55;
+}
+
+
+
+

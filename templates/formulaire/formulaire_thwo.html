@@ -1,0 +1,65 @@
+
+{% extends 'menu.html' %}
+
+{% block contenu %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+  <h6> Liste des Candidats(es) inscrits(es) pour des formations</h6>
+<form enctype="multipart/form-data"  method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<!-- <button type="submit" class="save btn btn−default">Enregistrer</button> -->
+</form>
+<br />
+
+
+<div class="table-responsive border ='1' width="600" style="border-collapse:collapse;">
+    <table class="table align-middle">
+      <thead bgcolor="#f5af19">
+        <tr>
+            <td><b>Dénomination_etablissement</b></td>
+            <td><b>Code</b></td>
+            <td><b>Nom_prenom_directeur</b></td>
+            <td><b>Nom_prenom_fondateur</b></td>
+            <td><b>Nombre_enseignants</b></td>
+            <td><b>Cycle</b></td>
+            <td><b>Localisation</b></td>
+            <td><b>Drena</b></td>
+            <td><b>Contacts</b></td>
+            <td><b>date</b></td>
+
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for formulaire in formulaire %}
+        <tr>
+    
+            <td>{{ formulaire.Denomination_etablissement }}</td>
+            <td>{{ formulaire.Code }}</td>
+            <td>{{ formulaire.Nom_prenom_directeur }}</td>
+            <td>{{ formulaire.Nom_prenom_fondateur }}</td>
+            <td>{{ formulaire.Nombre_enseignants }}</td>
+            <td>{{ formulaire.Cycle }}</td>
+            <td>{{ formulaire.Localisation }}</td>
+            <td>{{ formulaire.Drena }}</td>
+            <td>{{ formulaire.Contacts }}</td>
+            <td>{{ formulaire.date }}</td>
+        </tr>
+    
+      </tbody>
+      {% endfor %}
+    </table>
+</div>
+</body>
+</html>
+ 
+
+{% endblock %}

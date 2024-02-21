@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazareth Corporations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+  <header>
+    <div class="container">      
+      <div class="hh"><span class=" fa fa-phone mr-1">
+      <img src="{% static 'images/logo.jpeg'%}" width="100" light="100">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+      </svg> (+225)2722203115</span>  
+        <span class="fa fa-paper-plane mr-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+          <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+        </svg>nazareth27@gmail.com</span>
+      </div>
+    </div>
+    <marquee bgcolor="#f8a73e" height="30"> <h class="text-dark pp1"> Bienvenue sur Plateforme du Cabinet Nazareth Corporations. <button type="button" class=" Butt btn btn-danger btn-sm">Nouvelle Annonce</button> 
+    </p></marquee>
+    <!-- #f5af19    #b2d652   -->
+  </header> 
+
+  
+  <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top text-warning text-center" style="background-color:#019a47;"> -->
+
+  
+  {% include 'navbar/navbar.html' %} 
+
+  {% block contenu %}
+  
+  {% endblock %}
+  
+   
+  {% include 'footer/footer.html' %} 
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+  
+</body>
+</html>
